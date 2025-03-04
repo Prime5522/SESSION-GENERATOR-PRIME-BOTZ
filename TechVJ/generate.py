@@ -25,8 +25,8 @@ from telethon.errors import (
 ask_ques = "**» ▷ ᴄʜᴏᴏsᴇ ᴛʜᴇ sᴛʀɪɴɢ ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴᴛ ✔️ : :**"
 buttons_ques = [
     [
-        InlineKeyboardButton("𝗧𝗘𝗟𝗘𝗧𝗛𝗢𝗡", callback_data="telethon"),
-        InlineKeyboardButton("𝗣𝗬𝗥𝗢𝗚𝗥𝗔𝗠", callback_data="pyrogram")
+        InlineKeyboardButton("𝗣𝗬𝗥𝗢𝗚𝗥𝗔𝗠", callback_data="pyrogram"),
+        InlineKeyboardButton("𝗧𝗘𝗟𝗘𝗧𝗛𝗢𝗡", callback_data="telethon")
     ]
 ]
 
@@ -62,9 +62,9 @@ async def generate_session(bot: Client, msg: Message, telethon=False, is_bot: bo
         ty = "𝗣𝗬𝗥𝗢𝗚𝗥𝗔𝗠"
     if is_bot:
         ty += " 𝗕𝗢𝗧"
-    await msg.reply(f"» 𝗧𝗥𝗬𝗜𝗡𝗚 𝗧𝗢 𝗦𝗧𝗔𝗥𝗧 **{ty}** 𝗦𝗘𝗦𝗦𝗜𝗢𝗡 𝗚𝗘𝗡𝗘𝗥𝗔𝗧𝗢𝗥...")
+    await msg.reply(f"» 𝗧𝗥𝗬𝗜𝗡𝗚 𝗧𝗢 𝗦𝗧𝗔𝗥𝗧 **{ty}** 𝗦𝗘𝗦𝗦𝗜𝗢𝗡 𝗚𝗘𝗡𝗘𝗥𝗔𝗧𝗢𝗥...𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬: @PRIME_BOTZ")
     user_id = msg.chat.id
-    api_id_msg = await bot.ask(user_id, "sᴇɴᴅ ʏᴏᴜʀ **𝗔𝗣𝗜_𝗜𝗗** ᴛᴏ ᴘʀᴏᴄᴇᴇᴅ.\n\nᴄʟɪᴄᴋ ᴏɴ /skip ғᴏʀ ᴜsɪɴɢ ʙᴏᴛ ᴀᴘɪ.", filters=filters.text)
+    api_id_msg = await bot.ask(user_id, "sᴇɴᴅ ʏᴏᴜʀ **𝗔𝗣𝗜_𝗜𝗗** ᴛᴏ ᴘʀᴏᴄᴇᴇᴅ.", filters=filters.text)
     if await cancelled(api_id_msg):
         return
     if api_id_msg.text == "/skip":
@@ -76,7 +76,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, is_bot: bo
         except ValueError:
             await api_id_msg.reply("**𝗔𝗣𝗜_𝗜𝗗** ᴍᴜsᴛ ʙᴇ ᴀɴ ɪɴᴛᴇɢᴇʀ, sᴛᴀʀᴛ ɢᴇɴᴇʀᴀᴛɪɴɢ ʏᴏᴜʀ sᴇssɪᴏɴ ᴀɢᴀɪɴ.", quote=True, reply_markup=InlineKeyboardMarkup(gen_button))
             return
-        api_hash_msg = await bot.ask(user_id, "» ɴᴏᴡ sᴇɴᴅ ʏᴏᴜʀ **𝗔𝗣𝗜_𝗛𝗔𝗦𝗛**ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ.", filters=filters.text)
+        api_hash_msg = await bot.ask(user_id, "» ɴᴏᴡ sᴇɴᴅ ʏᴏᴜʀ **𝗔𝗣𝗜_𝗛𝗔𝗦𝗛** ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ.", filters=filters.text)
         if await cancelled(api_hash_msg):
             return
         api_hash = api_hash_msg.text
