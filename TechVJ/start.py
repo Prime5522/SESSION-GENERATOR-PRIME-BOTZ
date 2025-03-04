@@ -24,7 +24,7 @@ async def start(bot: Client, msg: Message):
             )
             await bot.send_photo(
                 chat_id=msg.chat.id,
-                photo="https://envs.sh/PA8.jpg",
+                photo="https://i.ibb.co.com/8nLtbXcs/IMG-20250304-184915-543.jpg",
                 caption="**⚠️Access Denied!⚠️\n\nPlease Join My Update Channel To Use Me. If You Joined The Channel Then Click On Check Again Button To Confirm.**",
                 reply_markup=key
             )
@@ -33,7 +33,7 @@ async def start(bot: Client, msg: Message):
     me = (await bot.get_me()).mention
     await bot.send_photo(
         chat_id=msg.chat.id,
-        photo="https://envs.sh/PA4.jpg",
+        photo="https://i.ibb.co.com/FRD1v1L/IMG-20250304-162149-080.jpg",
         caption=f"""<b>𝐇𝐞𝐲 {msg.from_user.mention}🍷,\n\nɪ ᴀᴍ {me},\nᴛʀᴜsᴛᴇᴅ 𝗦𝗧𝗥𝗜𝗡𝗚 𝗚𝗥𝗡𝗘𝗥𝗔𝗧𝗢𝗥 ʙᴏᴛ. ғᴜʟʟʏ sᴀғᴇ & sᴇᴄᴜʀᴇ.\nɴᴏ ᴀɴʏ ᴇʀʀᴏʀ\n\nMade With By : [VJ Botz](https://t.me/VJ_Botz) !</b>""",
         reply_markup=InlineKeyboardMarkup(
             [[
