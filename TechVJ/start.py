@@ -21,13 +21,20 @@ async def start(bot: Client, msg: Message):
                     InlineKeyboardButton("🍿 Join Update Channel 🍿", url=invite_link.invite_link),
                     InlineKeyboardButton("🍀 Check Again 🍀", callback_data="chk")
                 ]]
-            ) 
-        await msg.reply_text("**⚠️Access Denied!⚠️\n\nPlease Join My Update Channel To Use Me.If You Joined The Channel Then Click On Check Again Button To Confirm.**", reply_markup=key)
-        return 
+            )
+            await bot.send_photo(
+                chat_id=msg.chat.id,
+                photo="https://envs.sh/PA8.jpg",
+                caption="**⚠️Access Denied!⚠️\n\nPlease Join My Update Channel To Use Me. If You Joined The Channel Then Click On Check Again Button To Confirm.**",
+                reply_markup=key
+            )
+            return 
+
     me = (await bot.get_me()).mention
-    await bot.send_message(
+    await bot.send_photo(
         chat_id=msg.chat.id,
-        text=f"""<b>𝐇𝐞𝐲 {msg.from_user.mention}🍷,\n\nɪ ᴀᴍ {me},\nᴛʀᴜsᴛᴇᴅ 𝗦𝗧𝗥𝗜𝗡𝗚 𝗚𝗥𝗡𝗘𝗥𝗔𝗧𝗢𝗥 ʙᴏᴛ.ғᴜʟʟʏ sᴀғᴇ & sᴇᴄᴜʀᴇ.\nɴᴏ ᴀɴʏ ᴇʀʀᴏʀ\n\nMade With By : [VJ Botz](https://t.me/VJ_Botz) !</b>""",
+        photo="https://envs.sh/PA4.jpg",
+        caption=f"""<b>𝐇𝐞𝐲 {msg.from_user.mention}🍷,\n\nɪ ᴀᴍ {me},\nᴛʀᴜsᴛᴇᴅ 𝗦𝗧𝗥𝗜𝗡𝗚 𝗚𝗥𝗡𝗘𝗥𝗔𝗧𝗢𝗥 ʙᴏᴛ. ғᴜʟʟʏ sᴀғᴇ & sᴇᴄᴜʀᴇ.\nɴᴏ ᴀɴʏ ᴇʀʀᴏʀ\n\nMade With By : [VJ Botz](https://t.me/VJ_Botz) !</b>""",
         reply_markup=InlineKeyboardMarkup(
             [[
                 InlineKeyboardButton(text="⚡ Generate String Session ⚡", callback_data="generate")
@@ -39,16 +46,17 @@ async def start(bot: Client, msg: Message):
     )
 
 @Client.on_callback_query(filters.regex("chk"))
-async def chk(bot : Client, cb : CallbackQuery):
+async def chk(bot: Client, cb: CallbackQuery):
     try:
         await bot.get_chat_member(int(F_SUB), cb.from_user.id)
     except:
         await cb.answer("🙅‍♂️ You are not joined my channel first join channel then check again. 🙅‍♂️", show_alert=True)
         return 
     me = (await bot.get_me()).mention
-    await bot.send_message(
+    await bot.send_photo(
         chat_id=cb.from_user.id,
-        text=f"""<b>𝐇𝐞𝐲 {cb.from_user.mention}🍷,\n\nɪ ᴀᴍ {me},\nᴛʀᴜsᴛᴇᴅ 𝗦𝗧𝗥𝗜𝗡𝗚 𝗚𝗥𝗡𝗘𝗥𝗔𝗧𝗢𝗥 ʙᴏᴛ.ғᴜʟʟʏ sᴀғᴇ & sᴇᴄᴜʀᴇ.\nɴᴏ ᴀɴʏ ᴇʀʀᴏʀ\n\nMade With By : [VJ Botz](https://t.me/VJ_Botz) !</b>""",
+        photo="https://envs.sh/PA4.jpg",
+        caption=f"""<b>𝐇𝐞𝐲 {cb.from_user.mention}🍷,\n\nɪ ᴀᴍ {me},\nᴛʀᴜsᴛᴇᴅ 𝗦𝗧𝗥𝗜𝗡𝗚 𝗚𝗥𝗡𝗘𝗥𝗔𝗧𝗢𝗥 ʙᴏᴛ. ғᴜʟʟʏ sᴀғᴇ & sᴇᴄᴜʀᴇ.\nɴᴏ ᴀɴʏ ᴇʀʀᴏʀ\n\nMade With By : [VJ Botz](https://t.me/VJ_Botz) !</b>""",
         reply_markup=InlineKeyboardMarkup(
             [[
                 InlineKeyboardButton(text="⚡ Generate String Session ⚡", callback_data="generate")
@@ -57,4 +65,4 @@ async def chk(bot : Client, cb : CallbackQuery):
                 InlineKeyboardButton("🥀 Update Channel 🥀", url="https://t.me/VJ_Botz")
             ]]
         )
-    )
+        )
