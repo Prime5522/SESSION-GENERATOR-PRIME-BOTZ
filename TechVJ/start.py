@@ -55,7 +55,7 @@ async def chk(bot: Client, cb: CallbackQuery):
     me = (await bot.get_me()).mention
     await bot.send_photo(
         chat_id=cb.from_user.id,
-        photo="https://envs.sh/PA4.jpg",
+        photo="https://i.ibb.co.com/FRD1v1L/IMG-20250304-162149-080.jpg",
         caption=f"""<b>𝐇𝐞𝐲 {cb.from_user.mention}🍷,\n\nɪ ᴀᴍ {me},\nᴛʀᴜsᴛᴇᴅ 𝗦𝗧𝗥𝗜𝗡𝗚 𝗚𝗥𝗡𝗘𝗥𝗔𝗧𝗢𝗥 ʙᴏᴛ. ғᴜʟʟʏ sᴀғᴇ & sᴇᴄᴜʀᴇ.\nɴᴏ ᴀɴʏ ᴇʀʀᴏʀ\n\nMade With By : [VJ Botz](https://t.me/VJ_Botz) !</b>""",
         reply_markup=InlineKeyboardMarkup(
             [[
