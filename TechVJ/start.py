@@ -23,12 +23,12 @@ async def start(bot: Client, msg: Message):
                 ]]
             )
             await bot.send_photo(
-                chat_id=msg.chat.id,
-                photo="https://i.ibb.co.com/8nLtbXcs/IMG-20250304-184915-543.jpg",
-                caption = "caption = "⚠️Access Denied!⚠️\n\nIғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴜꜱᴇ ᴍᴇ, ғɪʀꜱᴛ ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ ᴊᴏɪɴ ᴏᴜʀ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ.\n\nғɪʀꜱᴛ, ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ **'✇ Jᴏɪɴ Oᴜʀ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇'** ʙᴜᴛᴛᴏɴ, ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ **'ʀᴇǫᴜᴇꜱᴛ ᴛᴏ Jᴏɪɴ'** ʙᴜᴛᴛᴏɴ.\n\nᴀғᴛᴇʀ ᴛʜᴀᴛ, ᴄᴏᴍᴇ ʜᴇʀᴇ ᴀɢᴀɪɴ ᴀɴᴅ 🔄 **ᴄʟɪᴄᴋ ᴛᴏ Tʀʏ Aɢᴀɪɴ ♻️**.""
-                reply_markup=key
-            )
-            return 
+    chat_id=msg.chat.id,
+    photo="https://i.ibb.co.com/8nLtbXcs/IMG-20250304-184915-543.jpg",
+    caption="⚠️Access Denied!⚠️\n\nIғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴜꜱᴇ ᴍᴇ, ғɪʀꜱᴛ ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ ᴊᴏɪɴ ᴏᴜʀ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ.\n\nғɪʀꜱᴛ, ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ **'✇ Jᴏɪɴ Oᴜʀ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇'** ʙᴜᴛᴛᴏɴ, ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ **'ʀᴇǫᴜᴇꜱᴛ ᴛᴏ Jᴏɪɴ'** ʙᴜᴛᴛᴏɴ.\n\nᴀғᴛᴇʀ ᴛʜᴀᴛ, ᴄᴏᴍᴇ ʜᴇʀᴇ ᴀɢᴀɪɴ ᴀɴᴅ 🔄 **ᴄʟɪᴄᴋ ᴛᴏ Tʀʏ Aɢᴀɪɴ ♻️**.",
+    reply_markup=key
+)
+return
 
     me = (await bot.get_me()).mention
     await bot.send_photo(
