@@ -25,7 +25,7 @@ async def start(bot: Client, msg: Message):
             await bot.send_photo(
                 chat_id=msg.chat.id,
                 photo="https://i.ibb.co.com/8nLtbXcs/IMG-20250304-184915-543.jpg",
-                caption="**⚠️Access Denied!⚠️\n\nPlease Join My Update Channel To Use Me. If You Joined The Channel Then Click On Check Again Button To Confirm.**",
+                caption = "caption = "⚠️Access Denied!⚠️\n\nIғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴜꜱᴇ ᴍᴇ, ғɪʀꜱᴛ ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ ᴊᴏɪɴ ᴏᴜʀ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ.\n\nғɪʀꜱᴛ, ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ **'✇ Jᴏɪɴ Oᴜʀ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇'** ʙᴜᴛᴛᴏɴ, ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ **'ʀᴇǫᴜᴇꜱᴛ ᴛᴏ Jᴏɪɴ'** ʙᴜᴛᴛᴏɴ.\n\nᴀғᴛᴇʀ ᴛʜᴀᴛ, ᴄᴏᴍᴇ ʜᴇʀᴇ ᴀɢᴀɪɴ ᴀɴᴅ 🔄 **ᴄʟɪᴄᴋ ᴛᴏ Tʀʏ Aɢᴀɪɴ ♻️**.""
                 reply_markup=key
             )
             return 
@@ -34,7 +34,11 @@ async def start(bot: Client, msg: Message):
     await bot.send_photo(
         chat_id=msg.chat.id,
         photo="https://i.ibb.co.com/FRD1v1L/IMG-20250304-162149-080.jpg",
-        caption=f"""<b>𝐇𝐞𝐲 {msg.from_user.mention}🍷,\n\nɪ ᴀᴍ {me},\nᴛʀᴜsᴛᴇᴅ 𝗦𝗧𝗥𝗜𝗡𝗚 𝗚𝗥𝗡𝗘𝗥𝗔𝗧𝗢𝗥 ʙᴏᴛ. ғᴜʟʟʏ sᴀғᴇ & sᴇᴄᴜʀᴇ.\nɴᴏ ᴀɴʏ ᴇʀʀᴏʀ\n\nMade With By : [VJ Botz](https://t.me/VJ_Botz) !</b>""",
+        caption=f"""<b>👋 ʜᴇʟʟᴏ ʙᴜᴅᴅʏ! {msg.from_user.mention} 🥰,\n\n\n🚀 ɪ ᴀᴍ ᴀ ꜱɪᴍᴘʟᴇ ʙᴜᴛ ᴘᴏᴡᴇʀꜰᴜʟ {me}, ʏᴏᴜ ᴄᴀɴ ɢᴇɴᴇʀᴀᴛᴇ ᴛᴇʟᴇᴛʜᴏɴ & ᴘʏʀᴏɢʀᴀᴍ ꜱᴇꜱꜱɪᴏɴ ꜱᴛʀɪɴɢ ꜰᴀꜱᴛ ᴀɴᴅ ꜱᴇᴄᴜʀᴇʟʏ.\n\n⚡ ʜᴏᴡ ᴛᴏ ᴜꜱᴇ ᴍᴇ?\n➥ ᴊᴜꜱᴛ ᴘʀᴇꜱꜱ ᴛʜᴇ ꜱᴛʀɪɴɢ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴜᴛᴛᴏɴ\n➥ ᴄʜᴏᴏꜱᴇ ʏᴏᴜʀ ᴘʏʀᴏɢʀᴀᴍ / ᴛᴇʟᴇᴛʜᴏɴ ᴏᴘᴛɪᴏɴ\n➥ ɢʀᴀɴᴛ ᴛʜᴇ ʀᴇQᴜɪʀᴇᴅ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ\n➥ ᴄᴏᴘʏ ᴀɴᴅ ᴘᴀꜱᴛᴇ ʏᴏᴜʀ ꜱᴇꜱꜱɪᴏɴ ꜱᴛʀɪɴɢ ᴛᴏ ʏᴏᴜʀ ʙᴏᴛ
+
+✅ ꜱᴇᴄᴜʀᴇ & ᴇɴᴄʀʏᴘᴛᴇᴅ\n✅ ꜰᴀꜱᴛ & ʀᴇʟɪᴀʙʟᴇ\n✅ ᴘᴏᴡᴇʀꜰᴜʟ & ᴇᴀꜱʏ ᴛᴏ ᴜꜱᴇ
+
+<blockquote> 🔰 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ  <a href='https://t.me/Prime_Botz'>ᴘʀɪᴍᴇ ʙᴏᴛz 🔥</a></blockquote></b>""",
         reply_markup=InlineKeyboardMarkup(
             [[
                 InlineKeyboardButton(text="ɢᴇɴᴇʀᴀᴛᴇ ꜱᴛʀɪɴɢ ꜱᴇꜱꜱɪᴏɴ", callback_data="generate")
@@ -61,7 +65,11 @@ async def chk(bot: Client, cb: CallbackQuery):
     await bot.send_photo(
         chat_id=cb.from_user.id,
         photo="https://i.ibb.co.com/FRD1v1L/IMG-20250304-162149-080.jpg",
-        caption=f"""<b>𝐇𝐞𝐲 {cb.from_user.mention}🍷,\n\nɪ ᴀᴍ {me},\nᴛʀᴜsᴛᴇᴅ 𝗦𝗧𝗥𝗜𝗡𝗚 𝗚𝗥𝗡𝗘𝗥𝗔𝗧𝗢𝗥 ʙᴏᴛ. ғᴜʟʟʏ sᴀғᴇ & sᴇᴄᴜʀᴇ.\nɴᴏ ᴀɴʏ ᴇʀʀᴏʀ\n\nMade With By : [VJ Botz](https://t.me/VJ_Botz) !</b>""",
+        caption=f"""<b>👋 ʜᴇʟʟᴏ ʙᴜᴅᴅʏ! {cb.from_user.mention} 🥰,\n\n\n🚀 ɪ ᴀᴍ ᴀ ꜱɪᴍᴘʟᴇ ʙᴜᴛ ᴘᴏᴡᴇʀꜰᴜʟ {me}, ʏᴏᴜ ᴄᴀɴ ɢᴇɴᴇʀᴀᴛᴇ ᴛᴇʟᴇᴛʜᴏɴ & ᴘʏʀᴏɢʀᴀᴍ ꜱᴇꜱꜱɪᴏɴ ꜱᴛʀɪɴɢ ꜰᴀꜱᴛ ᴀɴᴅ ꜱᴇᴄᴜʀᴇʟʏ.\n\n⚡ ʜᴏᴡ ᴛᴏ ᴜꜱᴇ ᴍᴇ?\n➥ ᴊᴜꜱᴛ ᴘʀᴇꜱꜱ ᴛʜᴇ ꜱᴛʀɪɴɢ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴜᴛᴛᴏɴ\n➥ ᴄʜᴏᴏꜱᴇ ʏᴏᴜʀ ᴘʏʀᴏɢʀᴀᴍ / ᴛᴇʟᴇᴛʜᴏɴ ᴏᴘᴛɪᴏɴ\n➥ ɢʀᴀɴᴛ ᴛʜᴇ ʀᴇQᴜɪʀᴇᴅ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ\n➥ ᴄᴏᴘʏ ᴀɴᴅ ᴘᴀꜱᴛᴇ ʏᴏᴜʀ ꜱᴇꜱꜱɪᴏɴ ꜱᴛʀɪɴɢ ᴛᴏ ʏᴏᴜʀ ʙᴏᴛ
+
+✅ ꜱᴇᴄᴜʀᴇ & ᴇɴᴄʀʏᴘᴛᴇᴅ\n✅ ꜰᴀꜱᴛ & ʀᴇʟɪᴀʙʟᴇ\n✅ ᴘᴏᴡᴇʀꜰᴜʟ & ᴇᴀꜱʏ ᴛᴏ ᴜꜱᴇ
+
+<blockquote> 🔰 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ  <a href='https://t.me/Prime_Botz'>ᴘʀɪᴍᴇ ʙᴏᴛz 🔥</a></blockquote></b>""",
         reply_markup=InlineKeyboardMarkup(
             [[
                 InlineKeyboardButton(text="ɢᴇɴᴇʀᴀᴛᴇ ꜱᴛʀɪɴɢ ꜱᴇꜱꜱɪᴏɴ", callback_data="generate")
@@ -103,7 +111,11 @@ async def about_callback(bot: Client, cb: CallbackQuery):
 async def back_to_start(bot: Client, cb: CallbackQuery):
     me = (await bot.get_me()).mention
     await cb.message.edit_caption(
-        caption=f"""<b>𝐇𝐞𝐲 {cb.from_user.mention}🍷,\n\nɪ ᴀᴍ {me},\nᴛʀᴜsᴛᴇᴅ 𝗦𝗧𝗥𝗜𝗡𝗚 𝗚𝗘𝗡𝗘𝗥𝗔𝗧𝗢𝗥 ʙᴏᴛ. ғᴜʟʟʏ sᴀғᴇ & sᴇᴄᴜʀᴇ.\nɴᴏ ᴀɴʏ ᴇʀʀᴏʀ\n\nMade With By : [VJ Botz](https://t.me/VJ_Botz) !</b>""",
+        caption=f"""<b>👋 ʜᴇʟʟᴏ ʙᴜᴅᴅʏ! {cb.from_user.mention} 🥰,\n\n\n🚀 ɪ ᴀᴍ ᴀ ꜱɪᴍᴘʟᴇ ʙᴜᴛ ᴘᴏᴡᴇʀꜰᴜʟ {me}, ʏᴏᴜ ᴄᴀɴ ɢᴇɴᴇʀᴀᴛᴇ ᴛᴇʟᴇᴛʜᴏɴ & ᴘʏʀᴏɢʀᴀᴍ ꜱᴇꜱꜱɪᴏɴ ꜱᴛʀɪɴɢ ꜰᴀꜱᴛ ᴀɴᴅ ꜱᴇᴄᴜʀᴇʟʏ.\n\n⚡ ʜᴏᴡ ᴛᴏ ᴜꜱᴇ ᴍᴇ?\n➥ ᴊᴜꜱᴛ ᴘʀᴇꜱꜱ ᴛʜᴇ ꜱᴛʀɪɴɢ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴜᴛᴛᴏɴ\n➥ ᴄʜᴏᴏꜱᴇ ʏᴏᴜʀ ᴘʏʀᴏɢʀᴀᴍ / ᴛᴇʟᴇᴛʜᴏɴ ᴏᴘᴛɪᴏɴ\n➥ ɢʀᴀɴᴛ ᴛʜᴇ ʀᴇQᴜɪʀᴇᴅ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ\n➥ ᴄᴏᴘʏ ᴀɴᴅ ᴘᴀꜱᴛᴇ ʏᴏᴜʀ ꜱᴇꜱꜱɪᴏɴ ꜱᴛʀɪɴɢ ᴛᴏ ʏᴏᴜʀ ʙᴏᴛ
+
+✅ ꜱᴇᴄᴜʀᴇ & ᴇɴᴄʀʏᴘᴛᴇᴅ\n✅ ꜰᴀꜱᴛ & ʀᴇʟɪᴀʙʟᴇ\n✅ ᴘᴏᴡᴇʀꜰᴜʟ & ᴇᴀꜱʏ ᴛᴏ ᴜꜱᴇ
+
+<blockquote> 🔰 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ  <a href='https://t.me/Prime_Botz'>ᴘʀɪᴍᴇ ʙᴏᴛz 🔥</a></blockquote></b>""",
         reply_markup=InlineKeyboardMarkup(
             [[
                 InlineKeyboardButton("⚡ ɢᴇɴᴇʀᴀᴛᴇ ꜱᴛʀɪɴɢ ꜱᴇꜱꜱɪᴏɴ ⚡", callback_data="generate")
